@@ -1,0 +1,38 @@
+<div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Register Today</h3>
+                    <p>Fill in the data below.</p>
+                    <form class="requires-validation" novalidate>
+
+                        <div class="col-md-12">
+                            <input class="form-control" type="text" name="firstName" [(ngModel)]="leadObj.firstName" placeholder="First Name" required>
+                        </div>
+
+                        <div class="col-md-12">
+                            <input class="form-control" type="text" name="email" [(ngModel)]="leadObj.email" placeholder="Email Address" required>
+                        </div>
+
+                        <div class="col-md-12">
+                            <input class="form-control" type="text" name="userName" [(ngModel)]="leadObj.userName" placeholder="Username" required>
+                        </div>
+
+                        <div class="col-md-12">
+                            <input class="form-control" type="password" name="password" [(ngModel)]="leadObj.password" placeholder="Password" required>
+                        </div>
+
+                        <div class="col-md-12">
+                            <input class="form-control" type="text" name="role" [(ngModel)]="leadObj.role" placeholder="Role" required>
+                        </div>
+
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary" (click)="addLead()">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
